@@ -12,7 +12,7 @@ function evaluateCalculation() {
         const result = eval(calculation);
         resultText.textContent = `${result}`;
     } catch (error) {
-        resultText.innerText = "";
+        resultText.textContent = "";
 
     }
 }
