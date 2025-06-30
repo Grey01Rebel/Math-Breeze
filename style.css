@@ -36,11 +36,18 @@ body {
 #display {
     width: 100%;
     padding: 1.5rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #ffffff;
     border: none;
     text-align: left;
     background-color:  hsl(0, 0%, 20%);
+}
+
+#result {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    text-align: right;
 }
 
 button {

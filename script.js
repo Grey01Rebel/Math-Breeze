@@ -1,7 +1,20 @@
 const display = document.getElementById("display");
+const resultText = document.getElementById("result");
 
 function appendToDisplay (input) {
     display.value += input;
+    evaluateCalculation();
+}
+
+function evaluateCalculation() {
+    try {
+        const calculation = display.value;
+        const result = eval(calculation);
+        resultText.innerText = `${result}`;
+    } catch (error) {
+        resultText.innerText = "";
+
+    }
 }
 
 function calculate() {
@@ -20,4 +33,5 @@ function calculate() {
 
 function clearDisplay() {
     display.value = "";
+    resultText.innerText = "";
 }
