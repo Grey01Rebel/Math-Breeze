@@ -10,7 +10,7 @@ function evaluateCalculation() {
     try {
         const calculation = display.value;
         const result = eval(calculation);
-        resultText.innerText = `${result}`;
+        resultText.textContent = `${result}`;
     } catch (error) {
         resultText.innerText = "";
 
@@ -33,5 +33,5 @@ function calculate() {
 
 function clearDisplay() {
     display.value = "";
-    resultText.innerText = "";
+    resultText.textContent = "";
 }
