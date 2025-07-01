@@ -49,3 +49,28 @@ function clearDisplay() {
     display.value = "";
     resultText.textContent = "";
 }
+
+document.addEventListener('keydown', function(char) {
+    const key = char.key;
+
+    // Handle numbers and operators
+    if (!isNaN(key) || ['+', '-', '*', '/','.'].includes(key)) {
+        appendToDisplay(key);
+    }
+
+    // Enter = equals
+    else if (key === 'Enter' || key === '=') {
+        char.preventDefault(); // Prevents form submission if any
+        calculate();
+    }
+
+    // Backspace = delete last character
+    else if (key === 'Backspace') {
+        delLastChar();
+    }
+
+    // Escape = clear all
+    else if (key === 'Escape') {
+        clearDisplay();
+    }
+});
