@@ -6,6 +6,9 @@ function appendToDisplay (input) {
     evaluateCalculation();
 }
 
+/* This function updates the calculation as the user, and will 
+provide an empty string if a calculation is yet to be complete. */
+
 function evaluateCalculation() {
     try {
         const calculation = display.value;
@@ -16,7 +19,7 @@ function evaluateCalculation() {
 
     }
 }
-
+// delete button
 function delLastChar() {
     const currentValue = display.value;
     display.value = currentValue.slice(0, -1);
@@ -27,7 +30,7 @@ function delLastChar() {
         resultText.textContent = "";
     }
 }
-
+// Equal to button
 function calculate() {
 
     try {
@@ -41,7 +44,7 @@ function calculate() {
     }
 
 }
-
+// clear button
 function clearDisplay() {
     display.value = "";
     resultText.textContent = "";
