@@ -17,6 +17,17 @@ function evaluateCalculation() {
     }
 }
 
+function delLastChar() {
+    const currentValue = display.value;
+    display.value = currentValue.slice(0, -1);
+    if (display.value.trim() !== "") {
+        evaluateCalculation();
+    }
+    else {
+        resultText.textContent = "";
+    }
+}
+
 function calculate() {
 
     try {

@@ -83,6 +83,24 @@ button:active {
     background-color: hsl(271, 76%, 73%);
 }
 
+.DeleteBtn {
+    font-size: 2.5rem;
+    background-color: hsl(31, 76%, 53%);
+
+}
+
+.DeleteBtn:hover {
+    font-size: 2.5rem;
+    background-color: hsl(31, 76%, 63%);
+
+}
+
+.DeleteBtn:active {
+    font-size: 2.5rem;
+    background-color: hsl(31, 76%, 73%);
+
+}
+
 .calculator {
     max-width: 500px;
     font-family: Arial, Helvetica, sans-serif;
