@@ -70,7 +70,7 @@ document.addEventListener('keydown', function(char) {
     }
 
     // Escape = clear all
-    else if (key === 'Escape') {
+    else if (key === 'Escape' || key === 'c' || key === 'C') {
         clearDisplay();
     }
 });
