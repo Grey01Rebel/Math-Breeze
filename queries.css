@@ -1,0 +1,60 @@
+/* Small screens (phones) */
+@media screen and (max-width: 480px) {
+    .calcCont {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    button {
+        width: clamp(3rem, 22vw, 4.5rem);
+        height: clamp(3rem, 22vw, 4.5rem);
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+    }
+
+    #display {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        padding: 1rem;
+    }
+
+    #result {
+        font-size: clamp(1.2rem, 6vw, 2rem);
+        padding: 0.5rem;
+    }
+
+    .calcName {
+        font-size: clamp(1.2rem, 7vw, 1.8rem);
+        text-align: center;
+        grid-column: span 4;
+    }
+}
+
+/* Medium screens (tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .calcCont {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.75rem;
+        padding: 1.25rem;
+    }
+
+    button {
+        width: clamp(4rem, 16vw, 5rem);
+        height: clamp(4rem, 16vw, 5rem);
+        font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    #display {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    #result {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    .calcName {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+        text-align: center;
+        grid-column: span 4;
+    }
+}
+

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.cdnfonts.com/css/bark-dones" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
     <title>Math Breeze</title>
 </head>
 <body>
@@ -31,12 +32,13 @@
                     <button onclick="appendToDisplay('.')">.</button>
                     <button class="operatorBtn" onclick="calculate()">=</button>
                     <button class="operatorBtn" onclick="clearDisplay()">C</button>
-                    <button class="DeleteBtn" onclick="delLastChar()">DEL</button>
+                    <button class="DeleteBtn" onclick="delLastChar()">Del</button>
                     <p class="calcName">Math Breeze</p>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.5.2/math.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
