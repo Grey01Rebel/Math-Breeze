@@ -12,7 +12,7 @@ provide an empty string if a calculation is yet to be complete. */
 function evaluateCalculation() {
     try {
         const calculation = display.value;
-        const result = eval(calculation);
+        const result = math.evaluate(calculation);
         resultText.textContent = `${result}`;
     } catch (error) {
         resultText.textContent = "";
@@ -35,7 +35,7 @@ function calculate() {
 
     try {
 
-    display.value = eval(display.value);
+    display.value = math.evaluate(display.value);
 
     } catch (error) {
 
