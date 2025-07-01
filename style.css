@@ -27,7 +27,8 @@ body {
 .calcName {
     font-size: 2rem;
     color: hsl(271, 76%, 53%);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Bark Dones', sans-serif;
+    letter-spacing: 1.5px;
     font-weight: 700;
     grid-column: span 2/5;
     margin-bottom: 0;
