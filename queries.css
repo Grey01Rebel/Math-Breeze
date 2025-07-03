@@ -24,8 +24,8 @@
 
     .calcName {
         font-size: clamp(1.2rem, 7vw, 1.8rem);
-        text-align: center;
-        grid-column: span 4;
+        text-align: left;
+        grid-column: span 2/5;
     }
 }
 
@@ -54,7 +54,7 @@
     .calcName {
         font-size: clamp(1.5rem, 6vw, 2rem);
         text-align: center;
-        grid-column: span 4;
+        grid-column: span 2/5;
     }
 }
 
